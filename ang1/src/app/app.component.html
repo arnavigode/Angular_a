@@ -1,0 +1,19 @@
+<!-- data in app.comp.ts file -->
+<h1>hello {{data}}</h1>
+
+<!-- basics -->
+<app-firstc></app-firstc>  
+
+
+<!-- import export -->
+<app-login></app-login>
+
+<!-- Events -->
+
+<button (click)="getValue('box')" >call function</button>
+<br/>
+<br/>
+<input (keyup)="getValue('boxid.value')" #boxid  type="text" placeholder="event keyup"/>
+<br/>
+<br/>
+<input (keyup)="getValue('boxid.value')" #boxid  type="text" placeholder="event keypress"/>
